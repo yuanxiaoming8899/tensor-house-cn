@@ -1,191 +1,322 @@
-<p align="center">
-  <img src="https://github.com/ikatsov/algorithmic-marketing-examples/blob/master/_resources/logo-banner.png" title="TensorHouse Logo">
+<div class="Box-sc-g0xbh4-0 bJMeLZ js-snippet-clipboard-copy-unpositioned" data-hpc="true"><article class="markdown-body entry-content container-lg" itemprop="text"><p align="center" dir="auto">
+  <a target="_blank" rel="noopener noreferrer" href="https://github.com/ikatsov/algorithmic-marketing-examples/blob/master/_resources/logo-banner.png"><img src="https://github.com/ikatsov/algorithmic-marketing-examples/raw/master/_resources/logo-banner.png" title="TensorHouse 徽标" style="max-width: 100%;"></a>
 </p>
-
-## What is TensorHouse? 
-TensorHouse is a collection of reference Jupyter notebooks and demo AI/ML applications for enterprise use cases: marketing, pricing, supply chain, smart manufacturing, and more. The goal of the project is to provide a toolkit for rapid readiness assessment, exploratory data analysis, and prototyping of various modeling approaches for typical enterprise AI/ML/data science projects.
-
-TensorHouse provides the following resources:
-* A well-documented repository of reference notebooks and demo applications (prototypes).
-* Readiness assessment and requirement gathering questionnaires for typical enterprise AI/ML projects.
-* Datasets, data generators, and simulators for rapid prototyping and model evaluation.
-
-TensorHouse focuses mainly on industry-proven solutions that leverage deep learning, reinforcement learning, and casual inference methods and models. Most of these solutions were originally developed either by industry practitioners or by academic researchers who worked in collaboration with leading companies in technology, retail, manufacturing, and other sectors.
-
-## How Does TensorHouse Help?
-TensorHouse helps to accelerate the following steps of the solution development:
-1. Faster evaluate readiness for specific use cases from the data, integration, and process perspectives using questionnaires and casual inference templates. 
-2. Choose candidate methods and models for solving your use cases, evaluate and tailor them using simulators and sample datasets. 
-3. Evaluate candidate methods and models on your data, build prototypes, and present preliminary results to stakeholders. 
-
-## What Libs Does TensorHouse Use?
-All prototypes and template are implemented in Python using a limited set of standard libraries: 
-* Deep learning: mostly `TensorFlow`, some prototypes use `PyTorch`
-* Reinforcement learning: `RLlib`
-* Causal inference: `DoWhy`, `EconML`
-* Probabilistic programming / Bayesian inference: `PyMC`
-* Generative AI: `LangChain`
-* Traditional ML: `statsmodels`, `scikit-learn`, `LightGBM`
-* Basic libs: `NumPy`, `pandas`, `matplotlib`, `seaborn`
-
-## Illustrative Examples
-
-#### Strategic price optimization using reinforcement learning
-*DQN learns a Hi-Lo pricing policy that switches between regular and discounted prices:*
-<p align="center">
-  <img src="https://github.com/ikatsov/tensor-house/blob/master/_resources/hilo-pricing-dqn-training-animation.gif" title="Price Optimization Using RL Animation">
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">TensorHouse是什么？</font></font></h2><a id="user-content-what-is-tensorhouse" class="anchor" aria-label="永久链接：TensorHouse 是什么？" href="#what-is-tensorhouse"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">TensorHouse 是一系列参考 Jupyter 笔记本和演示 AI/ML 应用程序，适用于企业用例：营销、定价、供应链、智能制造等。</font><font style="vertical-align: inherit;">该项目的目标是提供一个工具包，用于快速准备情况评估、探索性数据分析以及典型企业 AI/ML/数据科学项目的各种建模方法的原型设计。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">TensorHouse提供以下资源：</font></font></p>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">记录齐全的参考笔记本和演示应用程序（原型）存储库。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">典型企业 AI/ML 项目的准备情况评估和需求收集调查问卷。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">用于快速原型设计和模型评估的数据集、数据生成器和模拟器。</font></font></li>
+</ul>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">TensorHouse 主要专注于利用深度学习、强化学习以及休闲推理方法和模型的经过行业验证的解决方案。</font><font style="vertical-align: inherit;">这些解决方案大多数最初是由行业从业者或学术研究人员与技术、零售、制造和其他领域的领先公司合作开发的。</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">TensorHouse 有什么帮助？</font></font></h2><a id="user-content-how-does-tensorhouse-help" class="anchor" aria-label="永久链接：TensorHouse 有什么帮助？" href="#how-does-tensorhouse-help"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">TensorHouse 有助于加速解决方案开发的以下步骤：</font></font></p>
+<ol dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用调查问卷和随意推理模板，从数据、集成和流程角度更快地评估特定用例的准备情况。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">选择候选方法和模型来解决您的用例，使用模拟器和示例数据集对其进行评估和定制。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">根据您的数据评估候选方法和模型，构建原型并向利益相关者展示初步结果。</font></font></li>
+</ol>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">TensorHouse 使用哪些库？</font></font></h2><a id="user-content-what-libs-does-tensorhouse-use" class="anchor" aria-label="永久链接：TensorHouse 使用哪些库？" href="#what-libs-does-tensorhouse-use"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">所有原型和模板都是使用一组有限的标准库在 Python 中实现的：</font></font></p>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">深度学习：大部分</font></font><code>TensorFlow</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，一些原型使用</font></font><code>PyTorch</code></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">强化学习：</font></font><code>RLlib</code></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">因果推断：</font></font><code>DoWhy</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">,</font></font><code>EconML</code></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">概率编程/贝叶斯推理：</font></font><code>PyMC</code></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">生成式人工智能：</font></font><code>LangChain</code></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">传统机器学习：</font></font><code>statsmodels</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">, </font></font><code>scikit-learn</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">,</font></font><code>LightGBM</code></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">基本库：</font></font><code>NumPy</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">, </font></font><code>pandas</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">, </font></font><code>matplotlib</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">,</font></font><code>seaborn</code></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">说明性例子</font></font></h2><a id="user-content-illustrative-examples" class="anchor" aria-label="永久链接：说明性示例" href="#illustrative-examples"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用强化学习进行战略价格优化</font></font></h4><a id="user-content-strategic-price-optimization-using-reinforcement-learning" class="anchor" aria-label="永久链接：使用强化学习进行战略价格优化" href="#strategic-price-optimization-using-reinforcement-learning"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">DQN 学习在常规价格和折扣价格之间切换的 Hi-Lo 定价策略：</font></font></em></p>
+<p align="center" dir="auto">
+  <animated-image data-catalyst=""><a target="_blank" rel="noopener noreferrer" href="https://github.com/ikatsov/tensor-house/blob/master/_resources/hilo-pricing-dqn-training-animation.gif" data-target="animated-image.originalLink" hidden=""><img src="https://github.com/ikatsov/tensor-house/raw/master/_resources/hilo-pricing-dqn-training-animation.gif" title="使用 RL 动画进行价格优化" style="max-width: 100%;" data-target="animated-image.originalImage" hidden=""></a>
+      <span class="AnimatedImagePlayer" data-target="animated-image.player">
+        <a data-target="animated-image.replacedLink" class="AnimatedImagePlayer-images" href="https://github.com/ikatsov/tensor-house/blob/master/_resources/hilo-pricing-dqn-training-animation.gif" target="_blank">
+          <span data-target="animated-image.imageContainer">
+            <img data-target="animated-image.replacedImage" alt="" class="AnimatedImagePlayer-animatedImage" src="https://github.com/ikatsov/tensor-house/raw/master/_resources/hilo-pricing-dqn-training-animation.gif">
+          </span>
+        </a>
+        <button data-target="animated-image.imageButton" class="AnimatedImagePlayer-images" tabindex="-1"></button>
+        <span class="AnimatedImagePlayer-controls" data-target="animated-image.controls">
+          <button data-target="animated-image.playButton" class="AnimatedImagePlayer-button">
+            <svg aria-hidden="true" focusable="false" class="octicon icon-play" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 13.5427V2.45734C4 1.82607 4.69692 1.4435 5.2295 1.78241L13.9394 7.32507C14.4334 7.63943 14.4334 8.36057 13.9394 8.67493L5.2295 14.2176C4.69692 14.5565 4 14.1739 4 13.5427Z">
+            </path></svg>
+            <svg aria-hidden="true" focusable="false" class="octicon icon-pause" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+              <rect x="4" y="2" width="3" height="12" rx="1"></rect>
+              <rect x="9" y="2" width="3" height="12" rx="1"></rect>
+            </svg>
+          </button>
+          <a data-target="animated-image.openButton" aria-label="在新窗口中打开" class="AnimatedImagePlayer-button" href="https://github.com/ikatsov/tensor-house/blob/master/_resources/hilo-pricing-dqn-training-animation.gif" target="_blank">
+            <svg aria-hidden="true" class="octicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+              <path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 01.25.25v4.146a.25.25 0 01-.427.177L13.03 4.03 9.28 7.78a.75.75 0 01-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0110.604 1zM3.75 2A1.75 1.75 0 002 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0014 12.25v-3.5a.75.75 0 00-1.5 0v3.5a.25.25 0 01-.25.25h-8.5a.25.25 0 01-.25-.25v-8.5a.25.25 0 01.25-.25h3.5a.75.75 0 000-1.5h-3.5z"></path>
+            </svg>
+          </a>
+        </span>
+      </span></animated-image>
 </p>
-
-#### Supply chain optimization using reinforcement learning
-*DQN learns how to control procurement and logistics in a simulated environment:*
-<p align="center">
-  <img src="https://github.com/ikatsov/tensor-house/blob/master/_resources/demo-animation-world-of-supply.gif" title="Price Optimization Using RL Animation">
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用强化学习优化供应链</font></font></h4><a id="user-content-supply-chain-optimization-using-reinforcement-learning" class="anchor" aria-label="永久链接：使用强化学习优化供应链" href="#supply-chain-optimization-using-reinforcement-learning"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">DQN 学习如何在模拟环境中控制采购和物流：</font></font></em></p>
+<p align="center" dir="auto">
+  <animated-image data-catalyst=""><a target="_blank" rel="noopener noreferrer" href="https://github.com/ikatsov/tensor-house/blob/master/_resources/demo-animation-world-of-supply.gif" data-target="animated-image.originalLink" hidden=""><img src="https://github.com/ikatsov/tensor-house/raw/master/_resources/demo-animation-world-of-supply.gif" title="使用 RL 动画进行价格优化" style="max-width: 100%;" data-target="animated-image.originalImage" hidden=""></a>
+      <span class="AnimatedImagePlayer" data-target="animated-image.player">
+        <a data-target="animated-image.replacedLink" class="AnimatedImagePlayer-images" href="https://github.com/ikatsov/tensor-house/blob/master/_resources/demo-animation-world-of-supply.gif" target="_blank">
+          <span data-target="animated-image.imageContainer">
+            <img data-target="animated-image.replacedImage" alt="" class="AnimatedImagePlayer-animatedImage" src="https://github.com/ikatsov/tensor-house/raw/master/_resources/demo-animation-world-of-supply.gif">
+          </span>
+        </a>
+        <button data-target="animated-image.imageButton" class="AnimatedImagePlayer-images" tabindex="-1"></button>
+        <span class="AnimatedImagePlayer-controls" data-target="animated-image.controls">
+          <button data-target="animated-image.playButton" class="AnimatedImagePlayer-button">
+            <svg aria-hidden="true" focusable="false" class="octicon icon-play" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 13.5427V2.45734C4 1.82607 4.69692 1.4435 5.2295 1.78241L13.9394 7.32507C14.4334 7.63943 14.4334 8.36057 13.9394 8.67493L5.2295 14.2176C4.69692 14.5565 4 14.1739 4 13.5427Z">
+            </path></svg>
+            <svg aria-hidden="true" focusable="false" class="octicon icon-pause" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+              <rect x="4" y="2" width="3" height="12" rx="1"></rect>
+              <rect x="9" y="2" width="3" height="12" rx="1"></rect>
+            </svg>
+          </button>
+          <a data-target="animated-image.openButton" aria-label="在新窗口中打开" class="AnimatedImagePlayer-button" href="https://github.com/ikatsov/tensor-house/blob/master/_resources/demo-animation-world-of-supply.gif" target="_blank">
+            <svg aria-hidden="true" class="octicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+              <path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 01.25.25v4.146a.25.25 0 01-.427.177L13.03 4.03 9.28 7.78a.75.75 0 01-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0110.604 1zM3.75 2A1.75 1.75 0 002 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0014 12.25v-3.5a.75.75 0 00-1.5 0v3.5a.25.25 0 01-.25.25h-8.5a.25.25 0 01-.25-.25v-8.5a.25.25 0 01.25-.25h3.5a.75.75 0 000-1.5h-3.5z"></path>
+            </svg>
+          </a>
+        </span>
+      </span></animated-image>
 </p>
-
-#### Supply chain management using large language models
-*LLM dynamically writes a python script that invokes multiple APIs to answer user's question:*
-<p align="center">
-  <img src="https://github.com/ikatsov/tensor-house/blob/master/_resources/demo-animation-sc-control-tower.gif" title="Dynamic Scripting Using LLMs" width="90%">
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用大型语言模型的供应链管理</font></font></h4><a id="user-content-supply-chain-management-using-large-language-models" class="anchor" aria-label="永久链接：使用大型语言模型的供应链管理" href="#supply-chain-management-using-large-language-models"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">LLM动态编写一个Python脚本，调用多个API来回答用户的问题：</font></font></em></p>
+<p align="center" dir="auto">
+  <animated-image data-catalyst="" style="width: 90%;"><a target="_blank" rel="noopener noreferrer" href="https://github.com/ikatsov/tensor-house/blob/master/_resources/demo-animation-sc-control-tower.gif" data-target="animated-image.originalLink" hidden=""><img src="https://github.com/ikatsov/tensor-house/raw/master/_resources/demo-animation-sc-control-tower.gif" title="使用法学硕士的动态脚本" style="max-width: 100%;" data-target="animated-image.originalImage" hidden=""></a>
+      <span class="AnimatedImagePlayer" data-target="animated-image.player">
+        <a data-target="animated-image.replacedLink" class="AnimatedImagePlayer-images" href="https://github.com/ikatsov/tensor-house/blob/master/_resources/demo-animation-sc-control-tower.gif" target="_blank">
+          <span data-target="animated-image.imageContainer">
+            <img data-target="animated-image.replacedImage" alt="" class="AnimatedImagePlayer-animatedImage" src="https://github.com/ikatsov/tensor-house/raw/master/_resources/demo-animation-sc-control-tower.gif">
+          </span>
+        </a>
+        <button data-target="animated-image.imageButton" class="AnimatedImagePlayer-images" tabindex="-1"></button>
+        <span class="AnimatedImagePlayer-controls" data-target="animated-image.controls">
+          <button data-target="animated-image.playButton" class="AnimatedImagePlayer-button">
+            <svg aria-hidden="true" focusable="false" class="octicon icon-play" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 13.5427V2.45734C4 1.82607 4.69692 1.4435 5.2295 1.78241L13.9394 7.32507C14.4334 7.63943 14.4334 8.36057 13.9394 8.67493L5.2295 14.2176C4.69692 14.5565 4 14.1739 4 13.5427Z">
+            </path></svg>
+            <svg aria-hidden="true" focusable="false" class="octicon icon-pause" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+              <rect x="4" y="2" width="3" height="12" rx="1"></rect>
+              <rect x="9" y="2" width="3" height="12" rx="1"></rect>
+            </svg>
+          </button>
+          <a data-target="animated-image.openButton" aria-label="在新窗口中打开" class="AnimatedImagePlayer-button" href="https://github.com/ikatsov/tensor-house/blob/master/_resources/demo-animation-sc-control-tower.gif" target="_blank">
+            <svg aria-hidden="true" class="octicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+              <path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 01.25.25v4.146a.25.25 0 01-.427.177L13.03 4.03 9.28 7.78a.75.75 0 01-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0110.604 1zM3.75 2A1.75 1.75 0 002 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0014 12.25v-3.5a.75.75 0 00-1.5 0v3.5a.25.25 0 01-.25.25h-8.5a.25.25 0 01-.25-.25v-8.5a.25.25 0 01.25-.25h3.5a.75.75 0 000-1.5h-3.5z"></path>
+            </svg>
+          </a>
+        </span>
+      </span></animated-image>
 </p>
-
-#### Anomaly detection in images using autoencoders
-*Deep autoencoders produce image reconstructions that facilitate detection of defect locations:*
-<p align="center">
-  <img src="https://github.com/ikatsov/tensor-house/blob/master/_resources/visual-anomaly-example.png" title="Anomaly Detection in Images">
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用自动编码器进行图像异常检测</font></font></h4><a id="user-content-anomaly-detection-in-images-using-autoencoders" class="anchor" aria-label="永久链接：使用自动编码器进行图像异常检测" href="#anomaly-detection-in-images-using-autoencoders"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">深度自动编码器生成图像重建，有助于检测缺陷位置：</font></font></em></p>
+<p align="center" dir="auto">
+  <a target="_blank" rel="noopener noreferrer" href="https://github.com/ikatsov/tensor-house/blob/master/_resources/visual-anomaly-example.png"><img src="https://github.com/ikatsov/tensor-house/raw/master/_resources/visual-anomaly-example.png" title="图像中的异常检测" style="max-width: 100%;"></a>
 </p>
-
-## List of Prototypes and Templates
-The artifacts listed in this section can help to rapidly evaluate different solution approaches and build prototypes using your datasets. Artifacts are marked with the following qualifiers:
-  * 🧪 - artifacts that are particularly suitable for exploratory data analysis, evaluating the strength of causal effects in your data, and determining whether these data is feasible for solving a certain use case or not
-  * 🚀 - conceptual prototypes that use advanced methods and not necessarily suitable for productization
-  * 📚 - notebooks that demonstrate basic algorithms and intended mainly for educational purposes
-
-#### Promotions, Offers, and Advertisements
-These notebooks can be used to analyze the behavior of *individual* customers, calculate customer propensity (affinity) scores, and personalize offers, content, or digital experience. 
-
-* Customer Scoring and Lifetime Value
-   * Customer Propensity Scoring Using Deep Learning (LSTM with Attention) ([notebook](https://github.com/ikatsov/tensor-house/blob/master/promotions/propensity-scoring-lstm.ipynb))
-   * Customer-level Uplift Modeling Based On Observational Data Using Causal Inference ([notebook](https://github.com/ikatsov/tensor-house/blob/master/promotions/uplift-modeling-observational.ipynb)) (🧪)
-   * Customer Lifetime Value (LTV) Estimation Using Markov Chains ([notebook](https://github.com/ikatsov/tensor-house/blob/master/promotions/ltv-markov.ipynb))
-   * Customer Lifetime Value (LTV) Estimation Using Bayesian Buy-Till-You-Die (BTYD) Model ([notebook](https://github.com/ikatsov/tensor-house/blob/master/promotions/ltv-btyd-bayesian.ipynb))
-* Decision Automation
-   * Dynamic Content Personalization Using Contextual Bandits (LinUCB) ([notebook](https://github.com/ikatsov/tensor-house/blob/master/promotions/dynamic-content-personalization-rl.ipynb))
-   * Next Best Action Model Using Reinforcement Learning (Fitted Q Iteration) ([notebook](https://github.com/ikatsov/tensor-house/blob/master/promotions/next-best-action-rl.ipynb))
-
-#### Marketing, Customer, and Content Analytics
-The notebooks can be used to perform *aggregated* analysis of the customer population or segments, get insights from user-generated content, and optimize marketing budgets.
-
-* Content Analytics
-   * Sentiment Analysis Using Basic Transformers ([notebook](https://github.com/ikatsov/tensor-house/blob/master/marketing-analytics/sentiment-analysis.ipynb)) 
-   * Virtual Focus Groups Using LLMs ([notebook](https://github.com/ikatsov/tensor-house/blob/master/marketing-analytics/virtual-focus-groups.ipynb)) 
-* Customer Behavior Analytics and Embeddings
-   * Recency, Frequency, and Monetary Value (RFM) Analysis of Customer Purchases ([notebook](https://github.com/ikatsov/tensor-house/blob/master/marketing-analytics/rfm-analysis.ipynb)) (🧪)
-   * Analysis of Customer Behavior Patterns Using LSTM/Transformers ([notebook](https://github.com/ikatsov/tensor-house/blob/master/marketing-analytics/behavior-patterns-analytics-lstm.ipynb))
-   * Item2Vec Using Word2vec ([notebook](https://github.com/ikatsov/tensor-house/blob/master/marketing-analytics/item2vec.ipynb))
-   * Customer2Vec Using Doc2vec (notebooks: [simulator](https://github.com/ikatsov/tensor-house/blob/master/marketing-analytics/customer2vec-prototype.ipynb), [prototype](https://github.com/ikatsov/tensor-house/blob/master/marketing-analytics/customer2vec.ipynb))
-* Media Mix, Attribution, and Budget Optimization
-   * Campaign Effect Estimation In Observational Data Using Causal Inference ([notebook](https://github.com/ikatsov/tensor-house/blob/master/marketing-analytics/campaign-effect-observational.ipynb)) (🧪)
-   * Media Mix Modeling: Adstock Model for Campaign/Channel Attribution ([notebook](https://github.com/ikatsov/tensor-house/blob/master/marketing-analytics/mediamix-adstock.ipynb))
-   * Media Mix Modeling: Bayesian Model with Carryover and Saturation Effects ([notebook](https://github.com/ikatsov/tensor-house/blob/master/marketing-analytics/mediamix-bayesian.ipynb)) (🧪)
-   * Multitouch Channel Attribution Model Using Deep Learning (LSTM with Attention) ([notebook](https://github.com/ikatsov/tensor-house/blob/master/marketing-analytics/channel-attribution-lstm.ipynb))
-
-#### Search
-These notebooks can be used to create enterprise search, product catalog search, and visual search solutions.  
-
-* Text Search
-   * Latent Semantic Analysis (LSA) ([notebook](https://github.com/ikatsov/tensor-house/blob/master/search/text-search-lsa.ipynb)) (📚)
-   * Retrieval-augmented Generation (RAG) Using LLMs ([notebook](https://github.com/ikatsov/tensor-house/blob/master/search/retrieval-augmented-generation-llm.ipynb))
-* Visual Search
-   * Visual Search by Artistic Style (VGG16) ([notebook](https://github.com/ikatsov/tensor-house/blob/master/search/visual-search-artistic-style.ipynb))
-   * Visual Search Based on Product Type (EfficientNetB0) ([notebook](https://github.com/ikatsov/tensor-house/blob/master/search/visual-search-similarity.ipynb))
-   * Visual Search Using Variational Autoencoders ([notebook](https://github.com/ikatsov/tensor-house/blob/master/search/visual-search-vae.ipynb))
-   * Image Search Using a Language-Image Model (CLIP) ([notebook](https://github.com/ikatsov/tensor-house/blob/master/search/image-search-clip.ipynb))
-* Structured Data Search
-   * Relational Data Querying Using LLMs ([notebook](https://github.com/ikatsov/tensor-house/blob/master/search/relational-data-querying-llm.ipynb))
-* Data Preprocessing
-   * Product Attribute Discovery, Extraction, and Harmonization Using LLMs ([notebook](https://github.com/ikatsov/tensor-house/blob/master/search/product-attribute-extraction-llm.ipynb))
-
-#### Recommendations
-These notebooks can be used to prototype product recommendation solutions. 
-
-* Basic Collaborative Filtering
-   * Nearest Neighbor User-based Collaborative Filtering ([notebook](https://github.com/ikatsov/tensor-house/blob/master/recommendations/collaborative-filtering-user-based.ipynb)) (📚)
-   * Nearest Neighbor Item-based Collaborative Filtering ([notebook](https://github.com/ikatsov/tensor-house/blob/master/recommendations/collaborative-filtering-item-based.ipynb)) (📚)
-* Deep and Hybrid Recommenders
-   * Neural Collaborative Filtering - Prototype ([notebook](https://github.com/ikatsov/tensor-house/blob/master/recommendations/deep-recommender-factorization.ipynb)) (📚)
-   * Neural Collaborative Filtering - Hybrid Recommender ([notebook](https://github.com/ikatsov/tensor-house/blob/master/recommendations/deep-recommender-ncf.ipynb))
-   * Behavior Sequence Transformer ([notebook](https://github.com/ikatsov/tensor-house/blob/master/recommendations/deep-recommender-transformer.ipynb))
-   * Graph Recommender Using Node2Vec ([notebook](https://github.com/ikatsov/tensor-house/blob/master/recommendations/deep-recommender-graph-node2vec.ipynb))
-  
-#### Demand Forecasting
-These notebooks can be used to create demand and sales forecasting pipelines. These pipelines can further be used to solve inventory planning, price management, workforce optimization, and financial planning use cases.
-
-* Traditional Methods
-   * Demand Forecasting for a Single Entity Using Exponential Smoothing (ETS) ([notebook](https://github.com/ikatsov/tensor-house/blob/master/demand-forecasting/demand-univariate-exponential-smoothing.ipynb))
-   * Demand Forecasting for a Single Entity Using Autoregression (ARIMA/SARIMAX) ([notebook](https://github.com/ikatsov/tensor-house/blob/master/demand-forecasting/demand-univariate-arima.ipynb))
-   * Demand Forecasting and Price Effect Estimation for Multiple Entities Using Generalized Linear Models ([notebook](https://github.com/ikatsov/tensor-house/blob/master/demand-forecasting/demand-multivariate-glm.ipynb)) (🧪)
-* Deep Learning Methods
-   * Demand Forecasting for Multiple Entities Using DeepAR ([notebook](https://github.com/ikatsov/tensor-house/blob/master/demand-forecasting/demand-multivariate-deepar.ipynb))
-   * Demand Forecasting for a Single Entity Using NeuralProphet ([notebook](https://github.com/ikatsov/tensor-house/blob/master/demand-forecasting/demand-univariate-neural-prophet.ipynb))
-* Dynamic Learning 
-   * Bayesian Demand Models ([notebook](https://github.com/ikatsov/tensor-house/blob/master/pricing/demand-univariate-bayesian.ipynb))
-* Data Preprocessing
-   * Demand Types Classification ([notebook](https://github.com/ikatsov/tensor-house/blob/master/demand-forecasting/demand-types-classification.ipynb))
-   * Demand Unconstraining ([notebook](https://github.com/ikatsov/tensor-house/blob/master/demand-forecasting/demand-unconstraining.ipynb))
-
-#### Pricing and Assortment
-These notebooks can be used to create price optimization, promotion (markdown) optimization, and assortment optimization solutions.
-
-* Static Price, Promotion, and Markdown Optimization
-   * Market Response Functions ([notebook](https://github.com/ikatsov/tensor-house/blob/master/pricing/market-response-functions.ipynb)) (📚)
-   * Price Optimization for Multiple Products ([notebook](https://github.com/ikatsov/tensor-house/blob/master/pricing/price-optimization-multiple-products.ipynb))
-   * Price Optimization for Multiple Time Intervals ([notebook](https://github.com/ikatsov/tensor-house/blob/master/pricing/price-optimization-multiple-time-intervals.ipynb))
-* Dynamic Pricing
-   * Dynamic Pricing Using Thompson Sampling ([notebook](https://github.com/ikatsov/tensor-house/blob/master/pricing/dynamic-pricing-thompson.ipynb))
-   * Dynamic Pricing with Limited Price Experimentation ([notebook](https://github.com/ikatsov/tensor-house/blob/master/pricing/dynamic-pricing-limited-experimentation.ipynb))
-   * Price Optimization Using Reinforcement Learning (DQN) ([notebook](https://github.com/ikatsov/tensor-house/blob/master/pricing/price-optimization-using-dqn-reinforcement-learning.ipynb)) (🚀)
-
-#### Supply Chain
-These notebooks and applications can be used to develop procurement and inventory allocation solutions, as well as provide supply chain managers with advanced decisions support and automation tools.
-
-   * Single-echelon Inventory Optimization Using (s,Q) and (R,S) Policies ([notebook](https://github.com/ikatsov/tensor-house/blob/master/supply-chain/single-echelon-sQ-RS.ipynb))
-   * Inventory Allocation Optimization ([notebook](https://github.com/ikatsov/tensor-house/blob/master/supply-chain/inventory-allocation.ipynb))
-   * Multi-echelon Inventory Optimization Using Reinforcement Learning (DDPG, TD3) ([notebook](https://github.com/ikatsov/tensor-house/blob/master/supply-chain/supply-chain-reinforcement-learning.ipynb)) (🚀)
-   * Supply Chain Simulator for Reinforcement Learning Based Optimization (PPO) ([notebook](https://github.com/ikatsov/tensor-house/blob/master/supply-chain/world_of_supply/world-of-supply.ipynb)) (🚀)
-   * Supply Chain Control Tower Using LLMs ([notebook](https://github.com/ikatsov/tensor-house/blob/master/supply-chain/control_center_llm/control-center-llm.ipynb)) (🚀)
-   
-#### Smart Manufacturing
-These notebooks can be used to prototype visual quality control and predictive maintenance solutions.
-
-   * Noise Reduction in Multivariate Timer Series Using Linear Autoencoder (PCA) ([notebook](https://github.com/ikatsov/tensor-house/blob/master/smart-manufacturing/noise-reduction-pca.ipynb))
-   * Remaining Useful Life Prediction Using Convolution Networks ([notebook](https://github.com/ikatsov/tensor-house/blob/master/smart-manufacturing/remaining-useful-life-prediction.ipynb))
-   * Anomaly Detection in Time Series ([notebook](https://github.com/ikatsov/tensor-house/blob/master/smart-manufacturing/anomaly-detection-time-series.ipynb))
-   * Anomaly Detection in Images Using Autoencoders ([notebook](https://github.com/ikatsov/tensor-house/blob/master/smart-manufacturing/visual-quality-control.ipynb))
-
-## List of Questionnaires
-These questionnaires can be used to assess readiness for typical AI/ML projects and collect the requirements for creating roadmaps and estimates.
-   * Demand Sensing and Forecasting ([document](https://docs.google.com/document/d/1cd0n9L1pjCSGXgCS0CC3k9DpGiVzNhhmFlyhTXvnqws/edit))
-   * Price and Promotion Optimization ([document](https://docs.google.com/document/d/1mHOANKSavhxCn3Y_R9WYnCSWavnmJJdoRj9aFPZlFqE/edit))
-   * Next Best Action ([document](https://docs.google.com/document/d/10bo1wUAO8ctjaQqq2Y0mLo9k9itqwjyQysDOu_-C_rA/edit))
-
-## More Documentation
-* The most basic models are described the *Introduction to Algorithmic Marketing*. 
-    * Book's website - https://www.algorithmicmarketingbook.com/
-* More advanced models that use deep learning and reinforcement learning techniques are described in *The Theory and Practice of Enterprise AI*. 
-    * Book's website - https://www.enterprise-ai-book.com/
-* Templates for basic data science and ML task are available in [TensorHouseBasic](https://github.com/ikatsov/tensor-house-basic) repository. 
-* Most notebooks contain references to specific research papers, industrial reports, and real-world case studies.
-    * A manually curated list of [important papers](https://github.com/ikatsov/tensor-house/blob/master/_resources/papers.md) in enterprise AI.
-    * A manually curated list of [public datasets](https://github.com/ikatsov/tensor-house/blob/master/_resources/datasets.md) related to enterprise use cases.
-* Follow LinkedIn and X (Twitter) for notifications about new developments and releases.
-<div id="badges" align="center">
-  <a href="https://www.linkedin.com/in/ilya-katsov/">
-    <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">原型和模板列表</font></font></h2><a id="user-content-list-of-prototypes-and-templates" class="anchor" aria-label="永久链接：原型和模板列表" href="#list-of-prototypes-and-templates"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">本节中列出的工件可以帮助快速评估不同的解决方案方法并使用您的数据集构建原型。</font><font style="vertical-align: inherit;">工件标有以下限定符：</font></font></p>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🧪 - 特别适合探索性数据分析、评估数据中因果效应的强度以及确定这些数据对于解决特定用例是否可行的工件</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🚀 - 使用先进方法的概念原型，不一定适合产品化</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">📚 - 演示基本算法并主要用于教育目的的笔记本</font></font></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">促销、优惠和广告</font></font></h4><a id="user-content-promotions-offers-and-advertisements" class="anchor" aria-label="永久链接：促销、优惠和广告" href="#promotions-offers-and-advertisements"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">这些笔记本可用于分析</font></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">单个</font></font></em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">客户的行为，计算客户倾向（亲和力）分数，以及个性化优惠、内容或数字体验。</font></font></p>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">客户评分和终身价值
+</font></font><ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用深度学习（带注意力的 LSTM）进行客户倾向评分（</font></font><a href="https://github.com/ikatsov/tensor-house/blob/master/promotions/propensity-scoring-lstm.ipynb"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">笔记本</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用因果推理基于观察数据的客户级提升建模（</font></font><a href="https://github.com/ikatsov/tensor-house/blob/master/promotions/uplift-modeling-observational.ipynb"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">笔记本</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）(🧪)</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用马尔可夫链估算客户终身价值 (LTV)（</font></font><a href="https://github.com/ikatsov/tensor-house/blob/master/promotions/ltv-markov.ipynb"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">笔记本</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用贝叶斯 Buy-Till-You-Die (BTYD) 模型估算客户终身价值 (LTV)（</font></font><a href="https://github.com/ikatsov/tensor-house/blob/master/promotions/ltv-btyd-bayesian.ipynb"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">笔记本</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）</font></font></li>
+</ul>
+</li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">决策自动化
+</font></font><ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用上下文强盗进行动态内容个性化 (LinUCB)（</font></font><a href="https://github.com/ikatsov/tensor-house/blob/master/promotions/dynamic-content-personalization-rl.ipynb"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">笔记本</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用强化学习的下一个最佳行动模型（Fitted Q Iteration）（</font></font><a href="https://github.com/ikatsov/tensor-house/blob/master/promotions/next-best-action-rl.ipynb"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">笔记本</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）</font></font></li>
+</ul>
+</li>
+</ul>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">营销、客户和内容分析</font></font></h4><a id="user-content-marketing-customer-and-content-analytics" class="anchor" aria-label="永久链接：营销、客户和内容分析" href="#marketing-customer-and-content-analytics"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">这些笔记本可用于</font><font style="vertical-align: inherit;">对客户群或细分市场进行</font></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">聚合分析，从用户生成的内容中获取见解，并优化营销预算。</font></font></em><font style="vertical-align: inherit;"></font></p>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">内容分析
+</font></font><ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用基本 Transformers 进行情感分析（</font></font><a href="https://github.com/ikatsov/tensor-house/blob/master/marketing-analytics/sentiment-analysis.ipynb"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">笔记本</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用法学硕士的虚拟焦点小组（</font></font><a href="https://github.com/ikatsov/tensor-house/blob/master/marketing-analytics/virtual-focus-groups.ipynb"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">笔记本</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）</font></font></li>
+</ul>
+</li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">客户行为分析和嵌入
+</font></font><ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">客户购买的新近度、频率和货币价值 (RFM) 分析（</font></font><a href="https://github.com/ikatsov/tensor-house/blob/master/marketing-analytics/rfm-analysis.ipynb"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">笔记本</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）(🧪)</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 LSTM/Transformers 分析客户行为模式（</font></font><a href="https://github.com/ikatsov/tensor-house/blob/master/marketing-analytics/behavior-patterns-analytics-lstm.ipynb"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">笔记本</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Item2Vec 使用 Word2vec（</font></font><a href="https://github.com/ikatsov/tensor-house/blob/master/marketing-analytics/item2vec.ipynb"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">笔记本</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Customer2Vec 使用 Doc2vec（笔记本：</font></font><a href="https://github.com/ikatsov/tensor-house/blob/master/marketing-analytics/customer2vec-prototype.ipynb"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">模拟器</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">、</font></font><a href="https://github.com/ikatsov/tensor-house/blob/master/marketing-analytics/customer2vec.ipynb"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">原型</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）</font></font></li>
+</ul>
+</li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">媒体组合、归因和预算优化
+</font></font><ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用因果推理在观察数据中估计活动效果（</font></font><a href="https://github.com/ikatsov/tensor-house/blob/master/marketing-analytics/campaign-effect-observational.ipynb"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">笔记本</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）(🧪)</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">媒体混合建模：广告活动/频道归因的 Adstock 模型（</font></font><a href="https://github.com/ikatsov/tensor-house/blob/master/marketing-analytics/mediamix-adstock.ipynb"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">笔记本</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">媒体混合建模：具有残留和饱和效应的贝叶斯模型（</font></font><a href="https://github.com/ikatsov/tensor-house/blob/master/marketing-analytics/mediamix-bayesian.ipynb"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">笔记本</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）(🧪)</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用深度学习的多点触控渠道归因模型（带注意力的 LSTM）（</font></font><a href="https://github.com/ikatsov/tensor-house/blob/master/marketing-analytics/channel-attribution-lstm.ipynb"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">笔记本</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）</font></font></li>
+</ul>
+</li>
+</ul>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">搜索</font></font></h4><a id="user-content-search" class="anchor" aria-label="永久链接：搜索" href="#search"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">这些笔记本可用于创建企业搜索、产品目录搜索和视觉搜索解决方案。</font></font></p>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文本搜索
+</font></font><ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">潜在语义分析（LSA）（</font></font><a href="https://github.com/ikatsov/tensor-house/blob/master/search/text-search-lsa.ipynb"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">笔记本</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）（📚）</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用法学硕士的检索增强生成（RAG）（</font></font><a href="https://github.com/ikatsov/tensor-house/blob/master/search/retrieval-augmented-generation-llm.ipynb"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">笔记本</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）</font></font></li>
+</ul>
+</li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">视觉搜索
+</font></font><ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">按艺术风格进行视觉搜索（VGG16）（</font></font><a href="https://github.com/ikatsov/tensor-house/blob/master/search/visual-search-artistic-style.ipynb"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">笔记本</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">基于产品类型的视觉搜索（EfficientNetB0）（</font></font><a href="https://github.com/ikatsov/tensor-house/blob/master/search/visual-search-similarity.ipynb"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">笔记本</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用变分自动编码器的视觉搜索（</font></font><a href="https://github.com/ikatsov/tensor-house/blob/master/search/visual-search-vae.ipynb"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">笔记本</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用语言图像模型（CLIP）进行图像搜索（</font></font><a href="https://github.com/ikatsov/tensor-house/blob/master/search/image-search-clip.ipynb"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">笔记本</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）</font></font></li>
+</ul>
+</li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">结构化数据搜索
+</font></font><ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 LLM 进行关系数据查询（</font></font><a href="https://github.com/ikatsov/tensor-house/blob/master/search/relational-data-querying-llm.ipynb"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">笔记本</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）</font></font></li>
+</ul>
+</li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">数据预处理
+</font></font><ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用法学硕士进行产品属性发现、提取和协调（</font></font><a href="https://github.com/ikatsov/tensor-house/blob/master/search/product-attribute-extraction-llm.ipynb"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">笔记本</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）</font></font></li>
+</ul>
+</li>
+</ul>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">建议</font></font></h4><a id="user-content-recommendations" class="anchor" aria-label="永久链接：建议" href="#recommendations"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">这些笔记本可用于制作产品推荐解决方案的原型。</font></font></p>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">基本协同过滤
+</font></font><ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">基于最近邻用户的协同过滤（</font></font><a href="https://github.com/ikatsov/tensor-house/blob/master/recommendations/collaborative-filtering-user-based.ipynb"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">笔记本</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）（📚）</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">基于最近邻项目的协同过滤（</font></font><a href="https://github.com/ikatsov/tensor-house/blob/master/recommendations/collaborative-filtering-item-based.ipynb"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">笔记本</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）（📚）</font></font></li>
+</ul>
+</li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">深度和混合推荐器
+</font></font><ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">神经协同过滤 - 原型（</font></font><a href="https://github.com/ikatsov/tensor-house/blob/master/recommendations/deep-recommender-factorization.ipynb"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">笔记本</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）(📚)</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">神经协同过滤 - 混合推荐（</font></font><a href="https://github.com/ikatsov/tensor-house/blob/master/recommendations/deep-recommender-ncf.ipynb"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">笔记本</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">行为序列转换器（</font></font><a href="https://github.com/ikatsov/tensor-house/blob/master/recommendations/deep-recommender-transformer.ipynb"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">笔记本</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 Node2Vec 的图推荐器（</font></font><a href="https://github.com/ikatsov/tensor-house/blob/master/recommendations/deep-recommender-graph-node2vec.ipynb"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">笔记本</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）</font></font></li>
+</ul>
+</li>
+</ul>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">需求预测</font></font></h4><a id="user-content-demand-forecasting" class="anchor" aria-label="永久链接：需求预测" href="#demand-forecasting"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">这些笔记本可用于创建需求和销售预测管道。</font><font style="vertical-align: inherit;">这些管道还可用于解决库存规划、价格管理、劳动力优化和财务规划用例。</font></font></p>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">传统方法
+</font></font><ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用指数平滑 (ETS) 的单个实体的需求预测（</font></font><a href="https://github.com/ikatsov/tensor-house/blob/master/demand-forecasting/demand-univariate-exponential-smoothing.ipynb"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">笔记本</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用自回归对单个实体进行需求预测 (ARIMA/SARIMAX)（</font></font><a href="https://github.com/ikatsov/tensor-house/blob/master/demand-forecasting/demand-univariate-arima.ipynb"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">笔记本</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用广义线性模型对多个实体进行需求预测和价格影响估计（</font></font><a href="https://github.com/ikatsov/tensor-house/blob/master/demand-forecasting/demand-multivariate-glm.ipynb"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">笔记本</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）（🧪）</font></font></li>
+</ul>
+</li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">深度学习方法
+</font></font><ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 DeepAR 进行多个实体的需求预测（</font></font><a href="https://github.com/ikatsov/tensor-house/blob/master/demand-forecasting/demand-multivariate-deepar.ipynb"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">笔记本</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 NeuralProphet 进行单个实体的需求预测（</font></font><a href="https://github.com/ikatsov/tensor-house/blob/master/demand-forecasting/demand-univariate-neural-prophet.ipynb"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">笔记本</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）</font></font></li>
+</ul>
+</li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">动态学习
+</font></font><ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">贝叶斯需求模型（</font></font><a href="https://github.com/ikatsov/tensor-house/blob/master/pricing/demand-univariate-bayesian.ipynb"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">笔记本</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）</font></font></li>
+</ul>
+</li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">数据预处理
+</font></font><ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">需求类型分类（</font></font><a href="https://github.com/ikatsov/tensor-house/blob/master/demand-forecasting/demand-types-classification.ipynb"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">笔记本</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">需求不受约束（</font></font><a href="https://github.com/ikatsov/tensor-house/blob/master/demand-forecasting/demand-unconstraining.ipynb"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">笔记本</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）</font></font></li>
+</ul>
+</li>
+</ul>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">定价和品种</font></font></h4><a id="user-content-pricing-and-assortment" class="anchor" aria-label="永久链接：定价和分类" href="#pricing-and-assortment"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">这些笔记本可用于创建价格优化、促销（降价）优化和分类优化解决方案。</font></font></p>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">静态价格、促销和降价优化
+</font></font><ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">市场反应函数（</font></font><a href="https://github.com/ikatsov/tensor-house/blob/master/pricing/market-response-functions.ipynb"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">笔记本</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）（📚）</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">多种产品价格优化（</font></font><a href="https://github.com/ikatsov/tensor-house/blob/master/pricing/price-optimization-multiple-products.ipynb"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">笔记本</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">多个时间间隔的价格优化（</font></font><a href="https://github.com/ikatsov/tensor-house/blob/master/pricing/price-optimization-multiple-time-intervals.ipynb"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">笔记本</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）</font></font></li>
+</ul>
+</li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">动态定价
+</font></font><ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用汤普森抽样的动态定价（</font></font><a href="https://github.com/ikatsov/tensor-house/blob/master/pricing/dynamic-pricing-thompson.ipynb"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">笔记本</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">有限价格实验的动态定价（</font></font><a href="https://github.com/ikatsov/tensor-house/blob/master/pricing/dynamic-pricing-limited-experimentation.ipynb"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">笔记本</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用强化学习 (DQN) 进行价格优化（</font></font><a href="https://github.com/ikatsov/tensor-house/blob/master/pricing/price-optimization-using-dqn-reinforcement-learning.ipynb"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">笔记本</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）(🚀)</font></font></li>
+</ul>
+</li>
+</ul>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">供应链</font></font></h4><a id="user-content-supply-chain" class="anchor" aria-label="永久链接：供应链" href="#supply-chain"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">这些笔记本和应用程序可用于开发采购和库存分配解决方案，并为供应链经理提供先进的决策支持和自动化工具。</font></font></p>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 (s,Q) 和 (R,S) 策略的单梯队库存优化（</font></font><a href="https://github.com/ikatsov/tensor-house/blob/master/supply-chain/single-echelon-sQ-RS.ipynb"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">笔记本</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">库存分配优化（</font></font><a href="https://github.com/ikatsov/tensor-house/blob/master/supply-chain/inventory-allocation.ipynb"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">笔记本</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用强化学习的多级库存优化（DDPG、TD3）（</font></font><a href="https://github.com/ikatsov/tensor-house/blob/master/supply-chain/supply-chain-reinforcement-learning.ipynb"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">笔记本</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）(🚀)</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">用于基于强化学习的优化的供应链模拟器（PPO）（</font></font><a href="https://github.com/ikatsov/tensor-house/blob/master/supply-chain/world_of_supply/world-of-supply.ipynb"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">笔记本</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）（🚀）</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用法学硕士的供应链控制塔（</font></font><a href="https://github.com/ikatsov/tensor-house/blob/master/supply-chain/control_center_llm/control-center-llm.ipynb"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">笔记本</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）(🚀)</font></font></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">智能制造</font></font></h4><a id="user-content-smart-manufacturing" class="anchor" aria-label="永久链接：智能制造" href="#smart-manufacturing"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">这些笔记本可用于制作视觉质量控制和预测性维护解决方案的原型。</font></font></p>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用线性自动编码器 (PCA) 降低多元定时器系列中的噪声（</font></font><a href="https://github.com/ikatsov/tensor-house/blob/master/smart-manufacturing/noise-reduction-pca.ipynb"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">笔记本电脑</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用卷积网络预测剩余使用寿命（</font></font><a href="https://github.com/ikatsov/tensor-house/blob/master/smart-manufacturing/remaining-useful-life-prediction.ipynb"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">笔记本</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">时间序列中的异常检测（</font></font><a href="https://github.com/ikatsov/tensor-house/blob/master/smart-manufacturing/anomaly-detection-time-series.ipynb"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">笔记本</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用自动编码器进行图像异常检测（</font></font><a href="https://github.com/ikatsov/tensor-house/blob/master/smart-manufacturing/visual-quality-control.ipynb"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">笔记本</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）</font></font></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">问卷调查表</font></font></h2><a id="user-content-list-of-questionnaires" class="anchor" aria-label="永久链接：调查问卷清单" href="#list-of-questionnaires"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">这些调查问卷可用于评估典型人工智能/机器学习项目的准备情况，并收集创建路线图和估算的要求。</font></font></p>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">需求感知和预测（</font></font><a href="https://docs.google.com/document/d/1cd0n9L1pjCSGXgCS0CC3k9DpGiVzNhhmFlyhTXvnqws/edit" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文档</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">价格和促销优化（</font></font><a href="https://docs.google.com/document/d/1mHOANKSavhxCn3Y_R9WYnCSWavnmJJdoRj9aFPZlFqE/edit" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文档</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">下一步最佳行动（</font></font><a href="https://docs.google.com/document/d/10bo1wUAO8ctjaQqq2Y0mLo9k9itqwjyQysDOu_-C_rA/edit" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文档</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）</font></font></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">更多文档</font></font></h2><a id="user-content-more-documentation" class="anchor" aria-label="永久链接：更多文档" href="#more-documentation"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">算法营销简介中</font></font></em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">描述了最基本的模型</font><font style="vertical-align: inherit;">。
+</font></font><ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">本书的网站 - </font></font><a href="https://www.algorithmicmarketingbook.com/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">https://www.algorithmicmarketingbook.com/</font></font></a></li>
+</ul>
+</li>
+<li><font style="vertical-align: inherit;"></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">《企业人工智能的理论与实践》</font></font></em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">中描述了使用深度学习和强化学习技术的更高级模型</font><font style="vertical-align: inherit;">。
+</font></font><ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">本书的网站 - </font></font><a href="https://www.enterprise-ai-book.com/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">https://www.enterprise-ai-book.com/</font></font></a></li>
+</ul>
+</li>
+<li><font style="vertical-align: inherit;"></font><a href="https://github.com/ikatsov/tensor-house-basic"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">TensorHouseBasic</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">存储库中提供了基础数据科学和 ML 任务的模板</font><font style="vertical-align: inherit;">。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">大多数笔记本都包含对特定研究论文、行业报告和现实案例研究的参考。
+</font></font><ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">手动整理的企业人工智能</font></font><a href="https://github.com/ikatsov/tensor-house/blob/master/_resources/papers.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">重要论文</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">列表。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">手动整理的与企业用例相关的</font></font><a href="https://github.com/ikatsov/tensor-house/blob/master/_resources/datasets.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">公共数据</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">集列表。</font></font></li>
+</ul>
+</li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">关注 LinkedIn 和 X (Twitter)，获取有关新开发和发布的通知。</font></font></li>
+</ul>
+<div id="user-content-badges" align="center" dir="auto">
+  <a href="https://www.linkedin.com/in/ilya-katsov/" rel="nofollow">
+    <img src="https://camo.githubusercontent.com/73d7f9030632789d857cd7bb543d9cb9bada0672f246b6008258864452f17988/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4c696e6b6564496e2d626c75653f7374796c653d666f722d7468652d6261646765266c6f676f3d6c696e6b6564696e266c6f676f436f6c6f723d7768697465" alt="领英徽章" data-canonical-src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&amp;logo=linkedin&amp;logoColor=white" style="max-width: 100%;">
   </a>
-  <a href="https://twitter.com/ikatsov">
-    <img src="https://img.shields.io/badge/Twitter-blue?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter Badge"/>
+  <a href="https://twitter.com/ikatsov" rel="nofollow">
+    <img src="https://camo.githubusercontent.com/344871562459b446020edfad3758f2eaec8aa08d332bf52413055b03bb056b46/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f547769747465722d626c75653f7374796c653d666f722d7468652d6261646765266c6f676f3d74776974746572266c6f676f436f6c6f723d7768697465" alt="推特徽章" data-canonical-src="https://img.shields.io/badge/Twitter-blue?style=for-the-badge&amp;logo=twitter&amp;logoColor=white" style="max-width: 100%;">
   </a>
 </div>
-
-## Contribution
-We warmly welcome contributions, such as implementations of new use cases, advanced features and usability improvements for existing use cases, or enhancements to documentation.
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">贡献</font></font></h2><a id="user-content-contribution" class="anchor" aria-label="永久链接：贡献" href="#contribution"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我们热烈欢迎贡献，例如新用例的实现、现有用例的高级功能和可用性改进，或文档的增强。</font></font></p>
+</article></div>
